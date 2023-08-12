@@ -11,6 +11,8 @@ Next steps:
 - Tests
 - Types validation
 - Edge cases error hadling
+- Perhaps better Rust collections
+- Modularization
 
 Notes:
 
