@@ -1,13 +1,13 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Trade(String, f32, f32);
+pub struct Trade(pub String, pub f32, pub f32);
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Data {
     pub r#type: String,
     pub timestamp: u64,
-    pub prev_change_id: u64,
+    pub prev_change_id: Option<u64>,
     pub instrument_name: String,
     pub change_id: u64,
     pub bids: Vec<Trade>,
